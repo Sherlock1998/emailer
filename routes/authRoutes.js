@@ -14,13 +14,13 @@ module.exports = app => {
     function(req, res) {
       // Successful authentication, redirect home.
       // res.redirect('/api/current_user');
-      res.send(req.session);
+      res.send(req.user);
     }
   );
 
   app.get('/api/logout', (req, res) => {
     req.logout();
-    res.send(req.session);
+    res.send(req.user);
   });
 
   app.get('/api/current_user', (req, res) => {
