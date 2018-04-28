@@ -16,8 +16,7 @@ app.use(
   cookieSession({
     name: 'session',
     keys: [cookieKey],
-    maxAge: 24 * 60 * 60 * 1000 * 7 // 7 days
-  })
+    maxAge: 24 * 60 * 60 * 1000 * 7 
 );
 
 //Passport middlewares
