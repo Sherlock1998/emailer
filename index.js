@@ -4,6 +4,7 @@ const cookieSession = require('cookie-session');
 const passport = require('passport');
 const bodyParser = require('body-parser');
 require('./models/users');
+require('./models/surveys');
 require('./services/passport');
 const { mongoURI, cookieKey } = require('./config/keys');
 
