@@ -31,13 +31,12 @@ class Header extends Component {
   }
 
   render() {
-    console.log(this.props);
     return (
       <nav>
         <div className="container">
           <div className="nav-wrapper">
             <Link
-              to={this.props.isLoggedIn ? '/survey' : '/'}
+              to={this.props.isLoggedIn ? '/surveys' : '/'}
               className="brand-logo"
             >
               Logo
