@@ -36,7 +36,7 @@ class Header extends Component {
         <div className="container">
           <div className="nav-wrapper">
             <Link
-              to={this.props.isLoggedIn ? '/surveys' : '/'}
+              to={this.props.isLoggedIn ? '/' : '/landing'}
               className="brand-logo"
             >
               Logo
